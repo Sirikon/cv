@@ -1,5 +1,9 @@
 @import 'fonts';
 
+html, body {
+	overflow-x: hidden;
+}
+
 * {
 	font-family: "Ubuntu", "Arial";
 }
@@ -46,11 +50,21 @@ a {
 		//background-color: rgba(0,0,0,0.1);
 		background-image: url(../img/dotted_pattern.png);
 		margin-bottom: 25px;
-		display: -webkit-flex;
-		display: flex;
-		align-content: center;
-		align-items: center;
-		justify-content: center;
+
+		@media screen and (min-width: 960px) {
+			display: -webkit-flex;
+			display: flex;
+			align-content: center;
+			align-items: center;
+			justify-content: center;
+			-webkit-align-content: center;
+			-webkit-align-items: center;
+			-webkit-justify-content: center;
+		}
+
+		@media screen and (max-width: 960px) {
+			padding-bottom: 1px;
+		}
 
 		ul {
 			list-style: none;
@@ -63,6 +77,11 @@ a {
 			border: none;
 			margin: 0px;
 			//margin: 15px 0px;
+
+			@media screen and (max-width: 960px) {
+				width: 100%;
+				max-width: 100%;
+			}
 			
 
 			tr td {
@@ -86,6 +105,10 @@ a {
 			width: 560px;
 			text-align: center;
 
+			@media screen and (max-width: 960px) {
+				max-width: 100%;
+			}
+
 			* {
 				font-family: 'Shadows Into Light Two';
 			}
@@ -103,9 +126,6 @@ a {
 }
 
 [am-Skills] {
-	h6 {
-
-	}
 	span {
 		background-color: rgb(240, 240, 240);
 		padding: 5px;
