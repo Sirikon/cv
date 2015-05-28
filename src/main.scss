@@ -4,6 +4,10 @@
 	font-family: "Ubuntu", "Arial";
 }
 
+a {
+	color: orangered;
+}
+
 [am-Container] {
 	max-width: 960px;
 	margin: auto;
@@ -24,6 +28,7 @@
 			margin: -1px -15px;
 			padding: 10px 15px;
 			font-weight: normal;
+			background-image: url(../img/dotted_pattern_9.png);
 		}
 
 		h4 {
@@ -35,23 +40,82 @@
 		article {
 			margin-bottom: 40px;
 		}
+	}
 
-		[am-Skills] {
-			h6 {
+	[am-About] {
+		//background-color: rgba(0,0,0,0.1);
+		background-image: url(../img/dotted_pattern.png);
+		margin-bottom: 25px;
+		display: -webkit-flex;
+		display: flex;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
 
-			}
-			span {
-				background-color: rgb(240, 240, 240);
+		ul {
+			list-style: none;
+			padding: 0px;
+			margin: 15px 0px;
+		}
+
+		table {
+			width: 400px;
+			border: none;
+			margin: 0px;
+			//margin: 15px 0px;
+			
+
+			tr td {
 				padding: 5px;
-				display: inline-block;
-				border-radius: 3px;
-				box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+				//border: 1px solid rgb(208,208,208);
+				//border-width: 1px 0px 0px 0px;
+			}
+
+			tr:first-child td {
+				border: none;
+			}
+
+			tr td:first-child {
+				background-color: rgba(0,0,0,0.05);
 				font-weight: bold;
-				font-family: "Ubuntu Condensed";
-				color: rgb(50,50,50);
-				margin-bottom: 5px;
+				color: orangered;
 			}
 		}
+
+		[am-Quote] {
+			width: 560px;
+			text-align: center;
+
+			* {
+				font-family: 'Shadows Into Light Two';
+			}
+
+			p {
+				font-size: 25px;
+			}
+
+			span {
+				color: orangered;
+				font-weight: normal;
+			}
+		}
+	}
+}
+
+[am-Skills] {
+	h6 {
+
+	}
+	span {
+		background-color: rgb(240, 240, 240);
+		padding: 5px;
+		display: inline-block;
+		border-radius: 3px;
+		box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+		font-weight: bold;
+		font-family: "Ubuntu Condensed";
+		color: rgb(50,50,50);
+		margin-bottom: 5px;
 	}
 }
 
