@@ -64,6 +64,11 @@ a {
 
 		@media screen and (max-width: 960px) {
 			padding-bottom: 1px;
+
+			br {
+				display: none;
+			}
+
 		}
 
 		ul {

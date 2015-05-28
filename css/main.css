@@ -48,7 +48,9 @@ a {
         -webkit-justify-content: center; } }
     @media screen and (max-width: 960px) {
       [am-Container] [am-About] {
-        padding-bottom: 1px; } }
+        padding-bottom: 1px; }
+        [am-Container] [am-About] br {
+          display: none; } }
     [am-Container] [am-About] ul {
       list-style: none;
       padding: 0px;
