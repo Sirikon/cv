@@ -1,0 +1,21 @@
+{
+  "name": "sirikon-cv",
+  "version": "0.0.1",
+  "description": "Sirikon's CV",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^2.0.1",
+    "gulp": "",
+    "gulp-sass": "",
+    "gulp-sourcemaps": "",
+    "express": "",
+    "tiny-lr": "",
+    "connect-livereload": "",
+    "colors": ""
+  }
+}

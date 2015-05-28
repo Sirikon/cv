@@ -1,0 +1,65 @@
+@import 'fonts';
+
+* {
+	font-family: "Ubuntu", "Arial";
+}
+
+[am-Container] {
+	max-width: 960px;
+	margin: auto;
+	display: block;
+
+	[am-Content] {
+		background-color: white;
+		padding: 1px 15px;
+		border: 5px solid orangered;
+		border-width: 5px 0px 0px 0px;
+		border-radius: 3px;
+		box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+		margin-bottom: 25px;
+
+		h2 {
+			color: orangered;
+			background-color: rgba(245, 245, 245, 0.5);
+			margin: -1px -15px;
+			padding: 10px 15px;
+			font-weight: normal;
+		}
+
+		h4 {
+			color: grey;
+			font-family: "Ubuntu Condensed";
+			margin: -15px 0px 0px 0px;
+		}
+
+		article {
+			margin-bottom: 40px;
+		}
+
+		[am-Skills] {
+			h6 {
+
+			}
+			span {
+				background-color: rgb(240, 240, 240);
+				padding: 5px;
+				display: inline-block;
+				border-radius: 3px;
+				box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+				font-weight: bold;
+				font-family: "Ubuntu Condensed";
+				color: rgb(50,50,50);
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+
+hr {
+	border: 1px solid rgba(211, 211, 211, 0.5);
+	border-width: 1px 0px 0px 0px;
+}
+
+html, body {
+	background-color: whitesmoke;
+}
