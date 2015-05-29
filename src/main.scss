@@ -17,6 +17,28 @@ a {
 	margin: auto;
 	display: block;
 
+	[am-Header] {
+		h1 {
+			span {
+				float: right;
+				font-family: "Share Tech Mono";
+				color: orangered;
+				font-weight: lighter;
+			}
+
+			@media screen and (max-width: 960px) {
+				text-align: center;
+
+				span {
+					float: none;
+					display: block;
+					text-align: center;
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+
 	[am-Content] {
 		background-color: white;
 		padding: 1px 15px;
@@ -78,7 +100,7 @@ a {
 		}
 
 		table {
-			width: 400px;
+			width: 320px;
 			border: none;
 			margin: 0px;
 			//margin: 15px 0px;
@@ -107,7 +129,7 @@ a {
 		}
 
 		[am-Quote] {
-			width: 560px;
+			width: 640px;
 			text-align: center;
 
 			@media screen and (max-width: 960px) {
@@ -125,6 +147,38 @@ a {
 			span {
 				color: orangered;
 				font-weight: normal;
+			}
+		}
+	}
+
+	[am-Footer] {
+		text-align: center;
+
+		a {
+			color: black;
+			text-decoration: none;
+		}
+
+		h1[am-Title] {
+			font-family: "Kaushan Script";
+			opacity: 0.8;
+			transition: all 0.3s ease;
+			-webkit-transition: all 0.3s ease;
+
+			span {
+				transition: all 0.3s ease;
+				-webkit-transition: all 0.3s ease;
+				font-family: "Kaushan Script";
+				color: grey;
+			}
+
+			&:hover {
+				opacity: 1;
+				cursor: pointer;
+
+				span {
+					color: orangered;
+				}
 			}
 		}
 	}
