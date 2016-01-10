@@ -13,11 +13,12 @@ gulp.task('default', ['livereload','express'], function() {
 gulp.task('sass', function(){
 	gulp.src('src/main.scss')
 		.pipe(sourcemaps.init())
-        .pipe(sass({onError: function(err){
+        .pipe(sass().on('error', function(err){
         	var fnl = err.file.split("/");
         	var fn = fnl[fnl.length-1];
         	console.log("ERROR: ".red + fn.yellow + "#".cyan + err.line.toString().cyan + ":".cyan + err.column.toString().cyan + " - " + err.message);
-        }}))
+        	return true;
+        }))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('css'));
 });
