@@ -4,18 +4,18 @@
   "description": "Sirikon's CV",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "gulp",
+    "dev": "gulp dev"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "node-sass": "^2.0.1",
-    "gulp": "",
-    "gulp-sass": "",
-    "gulp-sourcemaps": "",
-    "express": "",
-    "tiny-lr": "",
-    "connect-livereload": "",
-    "colors": ""
+    "connect-livereload": "~0.6.0",
+    "express": "~4.14.0",
+    "gulp": "~3.9.1",
+    "gulp-sass": "~2.3.2",
+    "gulp-sourcemaps": "~2.2.0",
+    "tiny-lr": "~1.0.3"
   }
 }

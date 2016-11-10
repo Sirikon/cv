@@ -2,9 +2,8 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var express = require('express');
-var colors = require('colors');
 
-gulp.task('default', ['livereload','express'], function() {
+gulp.task('watch', ['livereload','express'], function() {
 	gulp.watch('css/*.css', notifyLiveReload);
 	gulp.watch('index.html', notifyLiveReload);
 	gulp.watch('src/*.scss', ['sass']);
@@ -13,12 +12,7 @@ gulp.task('default', ['livereload','express'], function() {
 gulp.task('sass', function(){
 	gulp.src('src/main.scss')
 		.pipe(sourcemaps.init())
-        .pipe(sass().on('error', function(err){
-        	var fnl = err.file.split("/");
-        	var fn = fnl[fnl.length-1];
-        	console.log("ERROR: ".red + fn.yellow + "#".cyan + err.line.toString().cyan + ":".cyan + err.column.toString().cyan + " - " + err.message);
-        	return true;
-        }))
+        .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('css'));
 });
@@ -46,3 +40,6 @@ gulp.task('express', function() {
 	app.listen(8080);
 	console.log("Web server listening on http://127.0.0.1:8080");
 });
+
+gulp.task('dev', ['sass', 'watch']);
+gulp.task('default', ['sass']);
