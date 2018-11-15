@@ -1,8 +1,0 @@
-general:
-  artifacts:
-    - "artifact.zip"
-deployment:
-  master:
-    branch: master
-    commands:
-      - sh ./deploy.sh
