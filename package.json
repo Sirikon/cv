@@ -1,21 +1,15 @@
 {
   "name": "sirikon-cv",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Sirikon's CV",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0",
-    "build": "gulp",
-    "dev": "gulp dev"
+    "build": "pitch build",
+    "start": "pitch serve"
   },
   "author": "",
   "license": "MIT",
-  "devDependencies": {
-    "connect-livereload": "~0.6.0",
-    "express": "~4.14.0",
-    "gulp": "~3.9.1",
-    "gulp-sass": "~2.3.2",
-    "gulp-sourcemaps": "~2.2.0",
-    "tiny-lr": "~1.0.3"
+  "dependencies": {
+    "pitch-cli": "^0.3.0"
   }
 }
