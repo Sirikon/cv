@@ -10,6 +10,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "pitch-cli": "^0.3.0"
+    "pitch-cli": "^0.8.1"
   }
 }
